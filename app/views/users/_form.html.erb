@@ -1,0 +1,32 @@
+<div class="text_field">
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+<div class="text_field">
+  <%= form.label :sex %>
+  <%= form.select(:sex, [["Masculino","M"],["Feminino","F"]], :prompt => "Selecione") %>
+</div>
+<div class="text_field">
+  <%= form.label :birthdate %>
+  <%= form.date_select :birthdate %>
+</div>
+<div class="text_field">
+  <%= form.label :email %>
+  <%= form.text_field :email, :type => "email" %>
+</div>
+<div class="password_field">
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+</div>
+<div class="text_field">
+  <%= form.label :terms_of_service_accepted %>
+  <%= form.check_box :terms_of_service_accepted %>
+</div>
+<div class="text_field">
+  <%= form.label :admin %>
+  <%= form.check_box :admin %>
+</div>
+<div class="text_field">
+  <%= form.label :active %>
+  <%= form.check_box :active %>
+</div>
